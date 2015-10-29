@@ -15,7 +15,11 @@ public class FakeTwitter {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        stuff()
         // TODO code application logic here
     }
     
+    public void stuff(){
+        System.out.println("Stuff");
+    }
 }
