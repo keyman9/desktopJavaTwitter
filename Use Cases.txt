@@ -1,6 +1,6 @@
 Use Cases
-* User logs in
-* User registers
+* User logs in GKP
+* User registers GKP
 * Non registered user views public feed
 * Registered user views subscriber-only messages+public feed
 * User blocks user
