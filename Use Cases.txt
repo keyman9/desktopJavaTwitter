@@ -1,0 +1,21 @@
+Use Cases
+* User logs in
+* User registers
+* Non registered user views public feed
+* Registered user views subscriber-only messages+public feed
+* User blocks user
+* User sends public message
+* User sends subscriber-only message
+* User sends direct message to another user
+* User subscribes to user
+* user searches for user
+* user creates profile 
+	- bio
+	- location
+* user edits profile
+	-bio
+	-location
+* user views profile
+* User attains super-user status (# of messages)
+* User attains super-popular(?) status (# of subscribers)
+* User searches by words
