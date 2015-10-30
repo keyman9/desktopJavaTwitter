@@ -8,7 +8,7 @@ Use Cases
 * User sends subscriber-only message
 * User sends direct message to another user
 * User subscribes to user
-* user searches for user
+smc * user searches for user
 * user creates profile 
 	- bio
 	- location
