@@ -1,13 +1,13 @@
 Use Cases
 * User logs in GKP
 * User registers GKP
-* Non registered user views public feed
+scs * Non registered user views public feed
 * Registered user views subscriber-only messages+public feed
-* User blocks user
-* User sends public message
+scs * User blocks user
+scs * User sends public message
 * User sends subscriber-only message
 * User sends direct message to another user
-* User subscribes to user
+scs * User subscribes to user
 smc * user searches for user
 * user creates profile 
 	- bio
