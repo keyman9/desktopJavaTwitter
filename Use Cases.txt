@@ -16,6 +16,6 @@ Use Cases
 	-bio
 	-location
 * user views profile
-* User attains super-user status (# of messages)
-* User attains super-popular(?) status (# of subscribers)
-* User searches by words
+smc * User attains super-user status (# of messages)
+smc * User attains super-popular(?) status (# of subscribers)
+smc * User searches by words
