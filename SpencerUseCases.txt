@@ -1,0 +1,44 @@
+Title: Non Registered User Views Public Feed
+Description: User opens application, public feed is displayed, regardless of logged in status.
+Main Flow: 
+* User Opens Application
+* List of public messages displayed by time stamp (Public Feed)
+Alternative Flow:
+* User Opens Application
+* User selects option to display Public Feed
+* Public Feed is displayed by time stamp
+
+Title: User Blocks User
+Description: Logged in user adds another user to blocked list of users.
+Main Flow: 
+* Logged in user chooses 'Block User' option
+* User enters to-be-blocked user's name
+* To-be-blocked user name is checked against current blocked user list
+* If not in blocked user list, add to-be-blocked to blocked
+Alternative Flow:
+* If to-be-blocked user already in blocked list, notify logged in user
+
+Title: User Sends Public Message
+Description: User creates a 140-character for the public feed.
+Main Flow:
+* User selects 'Create Message' option
+* User selects 'Public' option
+* User enters 140-character message
+* Message is created using user's 140-character message as content, including message creator and time stamp and 'Public' status
+* Message added to Public Feed
+Alternative Flow:
+* User selects 'Create Message' option
+* User enters 140-character message
+* User selects 'Public' option
+* Message is created using user's 140-character message as content, including message creator and time stamp and 'Public' status
+* Message added to Public Feed
+
+Title: User Subscribes to User
+Description: Logged in user adds another user to 'Subscribed' list of users.
+Main Flow:
+* Logged in user chooses 'Subscribe to User' option
+* User enters to-subscribe user's name
+* To-subscribe user name is checked against current subscribed user list
+* If not in subscribed user list, add to subscribed list
+Alternative Flow:
+* If to-subscribe user already in subscribe list, notify logged in user
