@@ -1,23 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package faketwitter;
 
 /**
  *
  * @author spencer
  */
+
 public class Message {
     private String content;
-    private User author;
+    private String author;
     private String timeStamp;
+    private String subscribe;
     
-    public Message(String in, User creator, String ts){
+    
+    //full constructor (could be useful for File I/O)
+    public Message(String in, String creator, String ts, String s){
         content = in;
         author = creator;
         timeStamp = ts;
+        subscribe = s;
     }
     
     
@@ -32,9 +32,9 @@ public class Message {
     
     //Author methods
     public void setAuthor(User creator){
-        author = creator;
+        author = creator.getName();
     }
-    public User getAuthor(){
+    public String getAuthor(){
         return author;
     }
     
@@ -46,4 +46,13 @@ public class Message {
     public String getTimeStamp(){
         return timeStamp;
     }
+    
+    //subscriber methods
+    public void setSubscribe(String in){
+        subscribe = in;
+    }
+    public String getSubscribe(){
+        return subscribe;
+    }
+    
 }
