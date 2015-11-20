@@ -47,16 +47,28 @@ public class Twittinator {
             //given the choice, perform the function(s)
             switch(userInput){             
                 //log in
+                    //Account Class responsibility
+                
                 //register
+                    //Account Class responsibility
                 //display feed
+                    //ArrayList of Message Class
                 //create message
+                    //Message Class Responsibility
                 //edit bio
+                    //User Class Responsibility
                 //subscribe to user
+                    //User Class Responsibility
                 //display subscriber list
+                    //User Class Responsibility
                 //block user
+                    //User Class Responsibility
                 //display blocked list
+                    //User Class Responsibility
                 //view profile
+                    //User Class Responsibility
                 //search by user
+                    //
                 //search by keyword
                 case 'Q':         //quit (running/save files)
                     running = false;
