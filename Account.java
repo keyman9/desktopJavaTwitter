@@ -31,9 +31,10 @@ public void actionPerformed(ActionEvent e){
       final int FIELD_WIDTH = 20;
       final JTextField textField = new JTextField(FIELD_WIDTH);
       
-            JTextField textField2 = new JTextField(FIELD_WIDTH);
+       final     JTextField textField2 = new JTextField(FIELD_WIDTH);
             JTextField textField3 = new JTextField(FIELD_WIDTH);
             
+            final JButton login=new JButton("Login");
 
 
      frame.setLayout(new FlowLayout());
@@ -42,7 +43,6 @@ frame.add(username);
                 frame.add(textField);
 
 frame.add(password);
-
 try{
    String fileName = "inventory.txt";
       FileReader file = new FileReader(fileName);
@@ -55,35 +55,51 @@ try{
                                 final String get=textField.getText();
                                 final JLabel get2= new JLabel();
                                 get2.setText(textField.getText());
+final String the=textField2.getText();
+
+                    final ArrayList<String> Users=new ArrayList<String>();
 
                                 
    register.addActionListener(new
          ActionListener()
          {
-                    ArrayList<String> Users=new ArrayList<String>();
 
             public void actionPerformed(ActionEvent event)
            {
        if (!Users.contains(textField.getText())){
        Users.add(textField.getText());
+       Users.add(textField2.getText());
        }
       else
       System.out.print("Username already exists.");
           for (int y=0;y<Users.size();y++){
                
-               System.out.print(Users.get(y));
-               
-               
-               
-               
+               System.out.println(Users.get(y));
                }
-            }
-        });     frame.add(register);
+               }
+               }); 
+               
+               login.addActionListener(new
+         ActionListener()
+         {  
+          public void actionPerformed(ActionEvent event)
+           {
+  
+             if (Users.contains(textField.getText()) && Users.contains(textField2.getText())){
+       System.out.print("Welcome back!");
+       }
+      else
+      System.out.print("Username already exists.");
+      }
+         });
+     
+     frame.add(register);
 
      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.pack();
     
     frame.setVisible(true);
+frame.add(login);
 
 String s1=textField.getText();
 
